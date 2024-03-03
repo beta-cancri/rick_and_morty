@@ -1,12 +1,9 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-    display: flex;
-    padding: 30px 20px 30px 20px; 
-    background-color: black;
-    justify-content: end;
 
-    input {
+    
+        input {
         margin-right: 10px;
         border-radius: 10px;
         font-size: 20px;

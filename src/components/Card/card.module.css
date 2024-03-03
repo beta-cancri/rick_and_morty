@@ -3,7 +3,7 @@
     background-color: rgb(37, 37, 170);
     padding: 15px;
     position: relative;
-    width: auto;
+    width: 330px;
 }
 
 .btn{
@@ -46,6 +46,7 @@ img{
     font-family: monospace;
     color: lightblue;
     font-style: normal;
+    text-align: justify;
 }
 
 .descriptionContainer span{

@@ -1,7 +1,5 @@
 .container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    background: lightblue;
-    
+    justify-content: space-around;  
 }
