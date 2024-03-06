@@ -1,10 +1,13 @@
 import './App.css';
 import Cards from './components/Cards/Cards.jsx';
 import Nav from './components/Nav/Nav.jsx';
+import  About from './components/About/About.jsx';
+import Detail from  './components/Detail/Detail.jsx';
 // import SearchBar from './components/SearchBar/SearchBar.jsx';
 // import characters from './data.js';
 import { useState } from 'react';
-import axios from 'axios';
+import { Routes, Route } from 'react-router-dom';
+import axios, { formToJSON } from 'axios';
 
 function App() {
 
@@ -55,8 +58,14 @@ function App() {
    return (
       <div className="App">
          {/* <SearchBar onSearch={(characterID) => window.alert(characterID)} /> */}
+         {/* <Nav onSearch={onSearch}/> */}
          <Nav onSearch={onSearch}/>
-         <Cards characters={characters} onClose={onClose}/>
+         <Routes>
+            <Route path="/home" element={<Cards characters={characters} onClose={onClose} />}/>
+            <Route path="/about" element={<About />} />
+            <Route path="/detail/:id" element={<Detail />} />
+         </Routes>
+         {/* // <Cards characters={characters} onClose={onClose}/> */}
       </div>
    );
 }

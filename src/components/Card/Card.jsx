@@ -1,8 +1,10 @@
 import style from "./card.module.css"
+import { useNavigate } from "react-router-dom";
 
 export default function Card({id, name, status, species, gender, origin, image, onClose}) {
+   const navigate = useNavigate()
    return (
-      <div className={style.container}>
+      <div className={style.container} onClick={() => navigate(`/detail/${id}`)}>
 
          <div className={style.buttonContainer}>
          <button className={style.btn} onClick={() => onClose(id)}>X</button>
