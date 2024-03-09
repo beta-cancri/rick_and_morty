@@ -1,0 +1,31 @@
+.container {
+
+    display: flex;
+}
+
+form{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.inputContainer{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+label{
+    margin: 10px 10px 10px 10px;
+    font-size: 20px;
+}
+
+button{
+    margin: 10px 10px 10px 10px;
+    font-size: 20px;
+}
+
+input{
+    margin: 10px;
+    font-size: 20px;
+}

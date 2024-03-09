@@ -5,13 +5,33 @@ import  About from './components/About/About.jsx';
 import Detail from  './components/Detail/Detail.jsx';
 // import SearchBar from './components/SearchBar/SearchBar.jsx';
 // import characters from './data.js';
-import { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import axios, { formToJSON } from 'axios';
+import LoginView from './components/LoginForm/LoginView.jsx';
+import Form from './components/LoginForm/Form.jsx';
 
 function App() {
 
    const [characters, setCharacters] = useState([])
+   const [access, setAccess] = useState(false);
+   const navigate = useNavigate()
+
+   const Email = "diego@mail.com"
+   const Password = "diego1"
+
+   const login = (userData) => {
+      if(userData.email === Email && userData.password === Password){
+         setAccess(true)
+         navigate("/home")
+      }
+   }
+
+   useEffect(() => {
+      !access && navigate("/")
+   }, [access])
+
+   const {pathname} = useLocation();
 
    const onClose = (id) => {
 
@@ -59,8 +79,9 @@ function App() {
       <div className="App">
          {/* <SearchBar onSearch={(characterID) => window.alert(characterID)} /> */}
          {/* <Nav onSearch={onSearch}/> */}
-         <Nav onSearch={onSearch}/>
+         {pathname !== "/" && <Nav onSearch={onSearch}/>}
          <Routes>
+            <Route path="/" element={<LoginView login={login}/>} />
             <Route path="/home" element={<Cards characters={characters} onClose={onClose} />}/>
             <Route path="/about" element={<About />} />
             <Route path="/detail/:id" element={<Detail />} />
