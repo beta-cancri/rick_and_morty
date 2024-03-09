@@ -51,7 +51,7 @@ const Form   = ({login}) => {
                 </div>
                 
 
-                    <button >Submit</button>
+                    <button className={style.button}>Submit</button>
             </form>
         </div>
     )

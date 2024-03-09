@@ -1,31 +1,63 @@
 .container {
-
+    background-image: url('https://i.imgur.com/1gajooQ.jpg'); /* Specify the path to your image */
+    background-size: cover; /* Adjusts the size of the background image to cover the entire container */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px; /* Set the width of the container */
+    height: 450px; /* Set the height of the container */
+    margin: auto; /* Center the container horizontally */
+    border: 2px solid black; /* Add a border for visual separation */
+    border-radius: 10px; /* Add rounded corners */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
 }
 
+
 form{
-    margin-left: 20px;
-    padding-top: 20px;
+    left: 50%;
+    padding-top: 0px;
+    
 }
 
 .inputContainer{
     display: flex;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 20px;
+    font-family: 'get_schwifty';
+    text-align: center;
+    justify-items: auto;
 }
 
 label{
     margin: 10px 10px 10px 10px;
     font-size: 20px;
+    font-family: 'get_schwifty';
 }
 
-button{
+.button{
     margin: 10px 10px 10px 10px;
     font-size: 20px;
+    font-family: 'get_schwifty';
+    align-items: center;
+    width: 75px; 
+    height: 45px; 
+    margin: auto; 
+    border: 2px solid black; 
+    border-radius: 10px; 
+    position: fixed;
+    top: 75%;
+    left: 40%;
 }
 
 input{
     margin: 10px;
     font-size: 20px;
+    font-family: 'get_schwifty';
 }

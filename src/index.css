@@ -61,7 +61,15 @@ button:focus-visible {
   }
 } */
 
+@font-face {
+  font-family: 'get_schwifty';
+  src: url('../src/assets/Font/get_schwifty.ttf');
+}
+
 body {
   margin: 0;
-  background: lightblue;
+  background-image: url(https://i.imgur.com/ezbcLse.jpg);
+  background-size: cover; /* Adjusts the size of the background image to cover the entire button */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  font-family: 'get_schwifty';
 }

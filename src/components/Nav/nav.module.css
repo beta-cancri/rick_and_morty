@@ -1,7 +1,7 @@
 .container{
 
     display: flex;
-    background-color: black;
+    background-color: transparent;
     padding: 30px 20px 30px 20px;
     justify-content: end;
     
