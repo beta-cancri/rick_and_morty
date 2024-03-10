@@ -46,7 +46,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -59,7 +59,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */
+}
 
 @font-face {
   font-family: 'get_schwifty';
@@ -69,7 +69,9 @@ button:focus-visible {
 body {
   margin: 0;
   background-image: url(https://i.imgur.com/ezbcLse.jpg);
-  background-size: cover; /* Adjusts the size of the background image to cover the entire button */
-  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-size: cover; 
+  background-repeat: no-repeat;
   font-family: 'get_schwifty';
 }
+
+
