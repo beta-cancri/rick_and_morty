@@ -9,6 +9,7 @@ const Nav = ({onSearch}) => {
             <button onClick={() => navigate(-1)}>Back</button>
             <button onClick={() => navigate("/home")}>Home</button>
             <button onClick={() => navigate("/about")}>About</button>
+            <button onClick={() => navigate("/favorites")}>Favorites</button>
             {/* <button onClick={() => navigate("/detail")}>Details</button> */}
             {/* <Link to="/home">Home</Link> */}
             <SearchBar onSearch={onSearch}/>

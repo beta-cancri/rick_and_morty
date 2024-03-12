@@ -27,7 +27,7 @@ const Detail = () => {
         <div className={style.container}>
 
          <div className={style.buttonContainer}>
-         <button className={style.btn} onClick={() => onClose(id)}>X</button>
+         {/* <button className={style.btn} onClick={() => onClose(id)}>X</button> */}
          </div>
 
          <div className={style.imgContainer}>

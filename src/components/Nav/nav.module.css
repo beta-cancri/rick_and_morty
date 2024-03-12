@@ -3,7 +3,19 @@
     display: flex;
     background-color: transparent;
     padding: 30px 20px 30px 20px;
-    justify-content: end;
-    
-     
+
+    justify-content: space-between;
 }
+
+button{
+    margin: 10px 10px 10px 10px;
+    font-size: 20px;
+    font-family: 'get_schwifty';
+    align-items: center;
+    width: 100px; 
+    height: 45px; 
+    margin: auto; 
+    border: 2px solid black; 
+    border-radius: 10px; 
+    position: auto;
+   }

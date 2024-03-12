@@ -10,6 +10,7 @@ import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import axios, { formToJSON } from 'axios';
 import LoginView from './components/LoginForm/LoginView.jsx';
 import Form from './components/LoginForm/Form.jsx';
+import FavoritesView from './components/Favorites/FavoritesView.jsx';
 
 function App() {
 
@@ -85,6 +86,7 @@ function App() {
             <Route path="/home" element={<Cards characters={characters} onClose={onClose} />}/>
             <Route path="/about" element={<About />} />
             <Route path="/detail/:id" element={<Detail />} />
+            <Route path="/favorites" element={<FavoritesView />} />
          </Routes>
          {/* // <Cards characters={characters} onClose={onClose}/> */}
       </div>
