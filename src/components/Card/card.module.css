@@ -69,3 +69,12 @@ img{
     font-style: italic;
 }
 
+.follow{
+    background: transparent;
+    border-color: transparent;
+}
+
+.unfollow{
+    background: transparent;
+    border-color: transparent;
+}

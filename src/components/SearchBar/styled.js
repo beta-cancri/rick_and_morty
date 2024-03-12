@@ -11,14 +11,16 @@ const Container = styled.div`
 `;
 
 const Button = styled.button`
-    background-color: red;
-    color: white;
+    background-color: gray;
+    color: black;
     font-size: 20px;
     border-radius:5px;
     cursor: pointer;
+    font-family: 'get_schwifty';
 
     &:hover {
-        background-color: blue;
+        background-color: black;
+        color: white;
     }
 `
 

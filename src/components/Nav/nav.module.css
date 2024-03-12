@@ -7,15 +7,114 @@
     justify-content: space-between;
 }
 
-button{
-    margin: 10px 10px 10px 10px;
+/* Home Button */
+.home button {
+    width: 150px;
+    height: 100px;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
     font-size: 20px;
     font-family: 'get_schwifty';
+    display: flex;
     align-items: center;
-    width: 100px; 
-    height: 45px; 
-    margin: auto; 
-    border: 2px solid black; 
-    border-radius: 10px; 
-    position: auto;
-   }
+    justify-content: center;
+    background-image: url('https://i.imgur.com/V0cceuI.jpg');
+    background-size: cover; /* Adjusts the size of the background image to cover the entire button */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    color: white;
+    cursor: pointer;
+}
+
+.home button:hover {
+    background-image: url('https://i.imgur.com/4OJSXSf.gif');
+    color: lightgreen;
+}
+
+/* Back Button */
+.back button {
+    width: 150px;
+    height: 100px;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    font-size: 20px;
+    font-family: 'get_schwifty';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://i.imgur.com/HKhgEWU.jpg');
+    background-size: cover; /* Adjusts the size of the background image to cover the entire button */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    color: white;
+    cursor: pointer;
+}
+
+.back button:hover {
+    background-image: url('https://i.imgur.com/hbNSgq0.gif');
+    color: lightgreen;
+}
+
+/* About Button */
+.about button {
+    width: 150px;
+    height: 100px;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    font-size: 20px;
+    font-family: 'get_schwifty';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://i.imgur.com/j3pNv5J.jpg');
+    background-size: cover; /* Adjusts the size of the background image to cover the entire button */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    color: lightgray;
+    cursor: pointer;
+}
+
+.about button:hover {
+    background-image: url('https://i.imgur.com/OSJnQLA.gif');
+    color: lightgreen;
+}
+
+/* Favorites Button */
+.favorites button {
+    width: 150px;
+    height: 100px;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    font-size: 20px;
+    font-family: 'get_schwifty';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://i.imgur.com/A1oWcku.jpg');
+    background-size: cover; /* Adjusts the size of the background image to cover the entire button */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    color: white;
+    cursor: pointer;
+}
+
+.favorites button:hover {
+    background-image: url('https://i.imgur.com/vWRwd5F.gif');
+    color: lightgreen;
+}
+
+
+.home button span,
+.back button span,
+.about button span,
+.favorites button span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
