@@ -15,7 +15,7 @@
     border: 2px solid black;
     border-radius: 10px;
     position: relative;
-    font-size: 20px;
+    font-size: 35px;
     font-family: 'get_schwifty';
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
     background-image: url('https://i.imgur.com/V0cceuI.jpg');
     background-size: cover; /* Adjusts the size of the background image to cover the entire button */
     background-repeat: no-repeat; /* Prevents the background image from repeating */
-    color: white;
+    color: red;
     cursor: pointer;
 }
 
@@ -40,7 +40,7 @@
     border: 2px solid black;
     border-radius: 10px;
     position: relative;
-    font-size: 20px;
+    font-size: 35px;
     font-family: 'get_schwifty';
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@
     background-image: url('https://i.imgur.com/HKhgEWU.jpg');
     background-size: cover; /* Adjusts the size of the background image to cover the entire button */
     background-repeat: no-repeat; /* Prevents the background image from repeating */
-    color: white;
+    color: red;
     cursor: pointer;
 }
 
@@ -65,7 +65,7 @@
     border: 2px solid black;
     border-radius: 10px;
     position: relative;
-    font-size: 20px;
+    font-size: 35px;
     font-family: 'get_schwifty';
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@
     background-image: url('https://i.imgur.com/j3pNv5J.jpg');
     background-size: cover; /* Adjusts the size of the background image to cover the entire button */
     background-repeat: no-repeat; /* Prevents the background image from repeating */
-    color: lightgray;
+    color: red;
     cursor: pointer;
 }
 
@@ -90,7 +90,7 @@
     border: 2px solid black;
     border-radius: 10px;
     position: relative;
-    font-size: 20px;
+    font-size: 35px;
     font-family: 'get_schwifty';
     display: flex;
     align-items: center;
@@ -98,7 +98,7 @@
     background-image: url('https://i.imgur.com/A1oWcku.jpg');
     background-size: cover; /* Adjusts the size of the background image to cover the entire button */
     background-repeat: no-repeat; /* Prevents the background image from repeating */
-    color: white;
+    color: red;
     cursor: pointer;
 }
 

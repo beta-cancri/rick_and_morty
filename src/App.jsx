@@ -74,7 +74,26 @@ function App() {
    //    setCharacters ([...characters, example])
    // }
 
-   
+   // const { pathname } = useLocation();
+
+   useEffect (() => {
+      if (pathname === "/"){
+         document.body.className = "Principal";
+      }
+      if (pathname === "/home"){
+         document.body.className = "Home";
+      }
+      if (pathname === "/about"){
+         document.body.className = "About";
+      }
+      if (pathname === "/favorites"){
+         document.body.className = "Favorites";
+      }
+      if (pathname === "/detail/:id"){
+         document.body.className = "Detail";
+      }
+      
+   }, [pathname]);
 
    return (
       <div className="App">

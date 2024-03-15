@@ -40,3 +40,43 @@
 .read-the-docs {
   color: #888;
 } */
+
+.Principal {
+  text-align: center;
+  background-image: url(https://i.imgur.com/ezbcLse.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+.Home {
+  text-align: center;
+  background-image: url(https://i.imgur.com/67IywpV.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+.About {
+  text-align: center;
+  background-image: url(https://i.imgur.com/7eE2yXC.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+.Favorites {
+  text-align: center;
+  background-image: url(https://i.imgur.com/4qdKBnl.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+.Detail {
+  text-align: center;
+  background-image: url(https://i.imgur.com/d6aBCqP.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
