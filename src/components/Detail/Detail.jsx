@@ -11,7 +11,7 @@ const Detail = () => {
 
     useEffect(() => {
         axios.get(`https://rym2.up.railway.app/api/character/${id}?key={pi-beta-cancri}`).then(
-         // data cna be change for anything and then replace in data.name for xxx.data.name and data for xxx.data
+         // data can be change for anything and then replace in data.name for xxx.data.name and data for xxx.data
          ({ data }) => {
             if (data.name) {
                setCharacter(() => data);
@@ -27,7 +27,7 @@ const Detail = () => {
         <div className={style.container}>
 
          <div className={style.buttonContainer}>
-         {/* <button className={style.btn} onClick={() => onClose(id)}>X</button> */}
+         
          </div>
 
          <div className={style.imgContainer}>

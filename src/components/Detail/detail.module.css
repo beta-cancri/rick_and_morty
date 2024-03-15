@@ -1,8 +1,8 @@
 .container{
     margin: 10px;
-    background-image: url('https://i.imgur.com/Aa9qQ7R.jpg'); /* Specify the path to your image */
-    background-size: cover; /* Adjusts the size of the background image to cover the entire button */
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-image: url('https://i.imgur.com/Aa9qQ7R.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
     padding: 15px;
     position: relative;
     width: 330px;
@@ -10,25 +10,25 @@
 }
 
 .container:hover{
-    background-image: url('https://i.imgur.com/zI1pl8w.jpg'); /* Specify the path to your hover image */
+    background-image: url('https://i.imgur.com/zI1pl8w.jpg');
 }
 
 .btn{
-    background-image: url('https://i.imgur.com/mY5roKf.jpg'); /* Specify the path to your image */
-    background-size: cover; /* Adjusts the size of the background image to cover the entire button */
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-image: url('https://i.imgur.com/mY5roKf.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
     cursor: pointer;
     border-radius: 10px;
     position: relative;
     right: 0px;
     z-index: 1;
-    width: 40px; /* Adjust width as needed */
-    height: 40px; /* Adjust height as needed */
+    width: 40px; 
+    height: 40px; 
     left: 40%;
 }
 
 .btn:hover {
-    background-image: url('https://i.imgur.com/CEBbyHc.gif'); /* Specify the path to your hover image */
+    background-image: url('https://i.imgur.com/CEBbyHc.gif');
 }
 
 .imgContainer {

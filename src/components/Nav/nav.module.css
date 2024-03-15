@@ -21,8 +21,8 @@
     align-items: center;
     justify-content: center;
     background-image: url('https://i.imgur.com/V0cceuI.jpg');
-    background-size: cover; /* Adjusts the size of the background image to cover the entire button */
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-size: cover;
+    background-repeat: no-repeat; 
     color: red;
     cursor: pointer;
 }
@@ -46,8 +46,8 @@
     align-items: center;
     justify-content: center;
     background-image: url('https://i.imgur.com/HKhgEWU.jpg');
-    background-size: cover; /* Adjusts the size of the background image to cover the entire button */
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-size: cover; 
+    background-repeat: no-repeat; 
     color: red;
     cursor: pointer;
 }
@@ -71,8 +71,8 @@
     align-items: center;
     justify-content: center;
     background-image: url('https://i.imgur.com/j3pNv5J.jpg');
-    background-size: cover; /* Adjusts the size of the background image to cover the entire button */
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-size: cover; 
+    background-repeat: no-repeat; 
     color: red;
     cursor: pointer;
 }
@@ -96,8 +96,8 @@
     align-items: center;
     justify-content: center;
     background-image: url('https://i.imgur.com/A1oWcku.jpg');
-    background-size: cover; /* Adjusts the size of the background image to cover the entire button */
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-size: cover;
+    background-repeat: no-repeat; 
     color: red;
     cursor: pointer;
 }
