@@ -15,7 +15,7 @@ const About = () => {
                 <h2>From: <span>Peru</span></h2>
                 <h2>Age: <span>37</span></h2>
                 <h2>Hobbies: <span>Videogames</span></h2>
-                <h2>Status: <span>In a relationship</span></h2>   
+                <h2>Status: <span>Engaged</span></h2>   
             </div>        
       </div>
     )

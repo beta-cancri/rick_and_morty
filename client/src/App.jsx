@@ -40,7 +40,7 @@ function App() {
    }
 
    function onSearch(id) {
-      axios.get(`https://rym2.up.railway.app/api/character/${id}?key={pi-beta-cancri}`).then(
+      axios.get(`http://localhost:3001/rickandmorty/character/${id}`).then(
          // data can be change for anything and then replace in data.name for xxx.data.name and data for xxx.data
          ({ data }) => {
             if (data.name) {
