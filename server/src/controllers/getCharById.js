@@ -1,13 +1,14 @@
 const axios  = require("axios");
 
-exports.getCharById = (res, id) => {
+exports.getCharById = (req, res) => {
 
+    const { id } = req.params;
     axios(`https://rym2.up.railway.app/api/character/${id}?key={pi-beta-cancri}`)
     .then((resp) => {
 
         let { name, gender, species, origin, image, status } = resp.data;
 
-        return {
+        const character = {
             id,
             name,
             gender,
@@ -16,13 +17,13 @@ exports.getCharById = (res, id) => {
             image,
             status,
         };
+
+        return character.name
+            ? res.json(character)
+            : res.status(404).send("Not Found");
     })
-    .then((resp) => {
-        res.writeHead(200, {"Content-Type": "application/json"});
-        res.end(JSON.stringify(resp));
-    })
+
     .catch((reason) => {
-        res.writeHead(500, {"Content-Type": "text/plain"});
-        res.end(JSON.stringify(reason.message));
+        return res.status(500).send(reason.message);
     })
 };

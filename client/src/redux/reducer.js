@@ -8,21 +8,29 @@ const initialState = {
 function rootReducer(state = initialState, action ){
 
     switch (action.type) {
-        case ADD_FAV:
-            return{
-                ...state,
-                myFavorites: [...state.myFavorites, action.payload],
-                allCharacters: [...state.allCharacters, action.payload]
-            }
+        // case ADD_FAV:
+        //     return{
+        //         ...state,
+        //         myFavorites: [...state.myFavorites, action.payload],
+        //         allCharacters: [...state.allCharacters, action.payload]
+        //     }
+
+        // REDUCER | ADD_FAV
+        case 'ADD_FAV':
+            return { ...state, myFavorites: payload, allCharacters: payload };
             
-        case REMOVE_FAV:
-            const filteredFavs = state.myFavorites.filter((fav) => {
-                fav.id !== Number(action.payload)
-            })  
-            return {
-                ...state,
-                myFavorites: filteredFavs
-            }; 
+        // case REMOVE_FAV:
+        //     const filteredFavs = state.myFavorites.filter((fav) => {
+        //         fav.id !== Number(action.payload)
+        //     })  
+        //     return {
+        //         ...state,
+        //         myFavorites: filteredFavs
+        //     }; 
+
+        // REDUCER | REMOVE_FAV
+        case 'REMOVE_FAV':
+            return { ...state, myFavorites: payload };
 
         case FILTER_FAV:
 
