@@ -28,12 +28,12 @@ function rootReducer(state = initialState, action ){
         //     }; 
 
         // REDUCER | ADD_FAV
-        case 'ADD_FAV':
-            return { ...state, myFavorites: payload, allCharacters: payload };
+        case ADD_FAV:
+            return { ...state, myFavorites: action.payload, allCharacters: action.payload };
 
         // REDUCER | REMOVE_FAV
-        case 'REMOVE_FAV':
-            return { ...state, myFavorites: payload };
+        case REMOVE_FAV:
+            return { ...state, myFavorites: action.payload };
 
         case FILTER_FAV:
 

@@ -8,10 +8,10 @@ exports.getCharById = async (req, res) => {
         const { id } = req.params;
 
         const { data } = await axios(`${URL}${id}?key=pi-beta-cancri`);
-
+        console.log("hola")
         if (data) {
             const { id, name, gender, species, origin, image, status } = data;
-
+        
             let character = { id, name, gender, species, origin, image, status };
 
             return res.status(200).json(character);
