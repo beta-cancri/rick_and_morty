@@ -1,6 +1,6 @@
 let myFavorites = []
 
-const postFav = (res, req) => {
+const postFav = (req, res) => {
 
     myFavorites.push(req.body);
 
@@ -23,4 +23,4 @@ const deleteFav = (req, res) => {
     return res.json(myFavorites);
 }
 
-module.exports = {postFav, deleteFav};
+module.exports = { postFav, deleteFav };

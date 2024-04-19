@@ -10,6 +10,7 @@ import LoginView from './components/LoginForm/LoginView.jsx';
 import Form from './components/LoginForm/Form.jsx';
 import FavoritesView from './components/Favorites/FavoritesView.jsx';
 
+
 function App() {
 
    const [characters, setCharacters] = useState([])
@@ -26,14 +27,31 @@ function App() {
    //    }
    // }
 
-   function login(userData) {
-      const { email, password } = userData;
-      const URL = 'http://localhost:3001/rickandmorty/login/';
-      axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
-         const { access } = data;
-         setAccess(data);
+   // function login(userData) {
+   //    const { email, password } = userData;
+   //    const URL = 'http://localhost:3001/rickandmorty/login/';
+   //    axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
+   //       const { access } = data;
+   //       setAccess(data);
+   //       access && navigate('/home');
+   //    });
+   // }
+
+   async function login(userData){
+      try{
+         const { email, password } = userData;
+         const URL = 'http://localhost:3001/rickandmorty/login/';
+
+         const {data} = await axios(URL + `?email=${email}&password=${password}`)
+
+         setAccess(data.access);
          access && navigate('/home');
-      });
+         
+
+      } catch (error){
+         window.alert('User or password are incorrect')
+         
+      }
    }
 
    useEffect(() => {
@@ -49,19 +67,35 @@ function App() {
       setCharacters(filterCharacters)
    }
 
-   function onSearch(id) {
-      axios.get(`http://localhost:3001/rickandmorty/character/${id}`).then(
-         // data can be change for anything and then replace in data.name for xxx.data.name and data for xxx.data
-         ({ data }) => {
-            if (data.name) {
-               setCharacters((oldChars) => [...oldChars, data]);
-            } else {
-               window.alert('¡No hay personajes con este ID!');
-            }
-         }
-      );
-   }
 
+   // data can be change for anything and then replace in data.name for xxx.data.name and data for xxx.data
+   // function onSearch(id) {
+   //    axios.get(`http://localhost:3001/rickandmorty/character/${id}`).then(
+         
+   //       ({ data }) => {
+   //          if (data.name) {
+   //             setCharacters((oldChars) => [...oldChars, data]);
+   //          } else {
+   //             window.alert('¡No hay personajes con este ID!');
+   //          }
+   //       }
+   //    );
+   // }
+ 
+   async function onSearch(id){
+      try{
+
+         const {data} = await axios(`http://localhost:3001/rickandmorty/character/${id}`)
+
+         setCharacters((oldChars) => [...oldChars, data]);
+
+      }catch (error){
+
+         window.alert('¡No hay personajes con este ID!');
+
+      }
+      
+   }
 
    useEffect (() => {
       if (pathname === "/"){
