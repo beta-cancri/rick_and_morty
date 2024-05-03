@@ -9,24 +9,6 @@ const initialState = {
 function rootReducer(state = initialState, action ){
 
     switch (action.type) {
-        // case ADD_FAV:
-        //     return{
-        //         ...state,
-        //         myFavorites: [...state.myFavorites, action.payload],
-        //         allCharacters: [...state.allCharacters, action.payload]
-        //     }
-
-
-            
-        // case REMOVE_FAV:
-        //     const filteredFavs = state.myFavorites.filter((fav) => {
-        //         fav.id !== Number(action.payload)
-        //     })  
-        //     return {
-        //         ...state,
-        //         myFavorites: filteredFavs
-        //     }; 
-
         // REDUCER | ADD_FAV
         case ADD_FAV:
             return { ...state, myFavorites: action.payload, allCharacters: action.payload };
@@ -63,3 +45,21 @@ function rootReducer(state = initialState, action ){
 }
 
 export default rootReducer
+
+// case ADD_FAV:
+        //     return{
+        //         ...state,
+        //         myFavorites: [...state.myFavorites, action.payload],
+        //         allCharacters: [...state.allCharacters, action.payload]
+        //     }
+
+
+            
+        // case REMOVE_FAV:
+        //     const filteredFavs = state.myFavorites.filter((fav) => {
+        //         fav.id !== Number(action.payload)
+        //     })  
+        //     return {
+        //         ...state,
+        //         myFavorites: filteredFavs
+        //     }; 
